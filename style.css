@@ -1,0 +1,116 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 100;
+}
+
+nav .logo {
+  font-weight: bold;
+  color: #f5ff40;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover { color: #f5ff40; }
+
+/* Hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.hero h1 { font-size: 70px; font-weight: 900; }
+.hero h1 span { color: #f5ff40; }
+.hero p { margin-top: 20px; font-size: 18px; color: #bbb; }
+
+/* Bottles */
+#buy-bottles {
+  padding: 100px 50px;
+  background: #1a1a1a;
+  min-height: 100vh;
+}
+#buy-bottles h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #f5ff40;
+}
+.bottle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+.bottle {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+.bottle:hover { transform: scale(1.05); background: #333; }
+.bottle img { max-width: 100%; height: 250px; object-fit: contain; margin-bottom: 20px; }
+.bottle h3 { margin: 10px 0; font-size: 20px; color: #fff; }
+.bottle p { font-size: 16px; color: #bbb; }
+.price { font-size: 18px; color: #f5ff40; margin: 10px 0; }
+button {
+  background: #f5ff40;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+button:hover { background: #fff200; }
+
+/* Floating Cart */
+.cart {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f5ff40;
+  color: #111;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}

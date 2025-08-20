@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liquor Store</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#hero">BOOZE</a></li>
+      <li><a href="#buy-bottles">BUY BOTTLES</a></li>
+    </ul>
+    <div class="logo">EAST<br>LONDON<br>LIQUOR<br>CO.</div>
+    <ul>
+      <li><a href="#">BELIEFS</a></li>
+      <li><a href="#">BRAND HOME</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h1>BOOZE <span>WITH</span> BOTTLE</h1>
+    <p>Decent spirits. At decent prices. For decent people.</p>
+  </section>
+
+  <!-- Buy Bottles Section -->
+  <section id="buy-bottles">
+    <h2>Buy Bottles</h2>
+    <div class="bottle-grid">
+      <div class="bottle">
+        <img src="image1.webp" alt="Whiskey">
+        <h3>Classic Whiskey</h3>
+        <p>Smooth, rich, and timeless.</p>
+        <div class="price">₹1200</div>
+        <button onclick="addToCart('Classic Whiskey', 1200)">Add to Cart</button>
+      </div>
+      <div class="bottle">
+        <img src="image.2.webp" alt="Vodka">
+        <h3>Premium Vodka</h3>
+        <p>Clean taste, perfect for cocktails.</p>
+        <div class="price">₹900</div>
+        <button onclick="addToCart('Premium Vodka', 900)">Add to Cart</button>
+      </div>
+      <div class="bottle">
+        <img src="beer-564401_640.webp" alt="Beer">
+        <h3>Craft Beer</h3>
+        <p>Fresh, hoppy, and crisp.</p>
+        <div class="price">₹250</div>
+        <button onclick="addToCart('Craft Beer', 250)">Add to Cart</button>
+      </div>
+      <div class="bottle">
+        <img src="image3..webp" alt="Rum">
+        <h3>Dark Rum</h3>
+        <p>Deep flavor with a hint of spice.</p>
+        <div class="price">₹1100</div>
+        <button onclick="addToCart('Dark Rum', 1100)">Add to Cart</button>
+      </div>
+      <div class="bottle">
+        <img src="image4.webp" alt="Gin">
+        <h3>London Dry Gin</h3>
+        <p>Refreshing, crisp, and aromatic.</p>
+        <div class="price">₹1300</div>
+        <button onclick="addToCart('London Dry Gin', 1300)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section id="beliefs" style="padding:100px 50px; background:#111; color:#fff;">
+  <h2 style="text-align:center; font-size:40px; margin-bottom:50px; color:#f5ff40;">
+    Our Beliefs
+  </h2>
+  <div style="max-width:900px; margin:auto; line-height:1.8; font-size:18px; color:#ccc;">
+    <p>
+      At <span style="color:#f5ff40; font-weight:bold;">East London Liquor Co.</span>, we believe good spirits
+      should be made for everyone — not just the elite. We stand for
+      <strong>transparency, craftsmanship, and fair prices</strong>.
+    </p>
+    <p>
+      Our team is dedicated to producing liquor with authenticity and care.
+      No gimmicks, no shortcuts — just honest bottles that taste as good as
+      they look. 
+    </p>
+    <p>
+      We also believe in giving back: sourcing responsibly, supporting
+      local communities, and ensuring our production respects the planet.
+    </p>
+    <p style="margin-top:20px; font-weight:bold; color:#f5ff40; text-align:center;">
+      Decent spirits. At decent prices. For decent people.
+    </p>
+  </div>
+</section>
+
+
+
+  <!-- Floating Cart -->
+  <a href="cart.html" class="cart">🛒</a>
+  <script src="script.js"></script>
+</body>
+</html>
